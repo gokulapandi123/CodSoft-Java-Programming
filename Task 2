@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Gokul{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+System.out.println("Mark Calculate From 10th Student Only");
+        System.out.println("Put Your All Sub Mark in Out Of 100");
+        int a,b,c,d,e;
+        System.out.println("Tamil Sub Mark:");
+         a = sc.nextInt();
+        System.out.println("English Sub Mark:");
+         b = sc.nextInt();
+        System.out.println("Maths Sub Mark:");
+         c = sc.nextInt();
+        System.out.println("Scince Sub Mark:");
+         d = sc.nextInt();
+        System.out.println("Social Sub Mark:");
+         e = sc.nextInt();
+         int z = a+b+c+d+e;
+         System.out.println("Your Over All Mark is:" +z+ " Out Of 500");
+         int x = z/5;
+         System.out.println("Your Over All Percentage is:"+x+ "% Out Of 100");
+         if(x<50){
+             System.out.println("Your Grade is:U");
+         }else if(x<=60){
+             System.out.println("Your Grade is:D");
+         }else if(x<=70){
+             System.out.println("Your Grade is:C");
+         }else if(x<=80){
+             System.out.println("Your Grade is:B");
+         }else if(x<=90){
+             System.out.println("Your Grade is:A");
+         }else if(x<=100){
+             System.out.println("Your Grade is:O");
+         }
+    }
+}

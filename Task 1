@@ -1,0 +1,26 @@
+import java.util.Random;
+import java.util.Scanner;
+public class Gokul{
+    public static void main(String args[]){
+        System.out.println("Your Guessing Input Is Numbers Only Not Charecter");
+        Random s1 = new Random();
+        Scanner sc = new Scanner(System.in);
+        int k=5;
+        int l;
+        for(l=0;l<k;l++){
+        System.out.println("Your Guessing Number is:");
+        int i = sc.nextInt();
+        int j = s1.nextInt(100);
+        if(i==j){
+            System.out.println("Your Guessing is Correct");
+        }
+        else if(i<j){
+            System.out.println("Your Guessing is Low");
+        }
+        else if(i>j){
+            System.out.println("Your Guessing is High");
+        }
+        System.out.println("The Random Number is:"+j);
+    }
+    }
+}
